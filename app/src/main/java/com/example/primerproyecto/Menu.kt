@@ -1,5 +1,6 @@
 package com.example.primerproyecto
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -25,7 +26,16 @@ class Menu : AppCompatActivity() {
         button2 = findViewById(R.id.button2)
 
         button1.setOnClickListener {
+            //el intent es una clase que se utiliza para mandar llamar cosas fuera del activity,
+            // sirve para comunicar cosas entre la app
+            // se le manda la vista desde la cual se va a mandar lllamar el  y el activity que se va a mandar llamar
+            val llamado1 = Intent(this@Menu, MainActivity::class.java)
+            startActivity(llamado1)
+        }
 
+        button2.setOnClickListener {
+            val llamado2 = Intent(this@Menu, MainActivity2::class.java)
+            startActivity(llamado2)
         }
     }
 }
