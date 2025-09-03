@@ -25,16 +25,16 @@
         android:gravity="center"
         >
         <Button
-            android:layout_width="150dp"
+            android:layout_width="@dimen/ancho_btn"
             android:layout_height="wrap_content"
             android:id="@+id/button1"
-            android:text="Opcion 1"
+            android:text="@string/txt_btn_menu_1"
             />
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/button2"
-            android:text="Opcion 2"
+            android:text="@string/txt_btn_menu_2"
             />
 
     </LinearLayout>

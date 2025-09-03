@@ -18,5 +18,48 @@
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src='@mipmap/ic_launcher_round' />
+        android:src='@mipmap/ferrari'
+        android:id="@+id/imageView1"
+        android:layout_marginTop="40px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            tools:src='@mipmap/ic_launcher'
+            android:layout_weight="1"
+            android:layout_margin="@dimen/img_marg"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            tools:src='@mipmap/ic_launcher'
+            android:layout_weight="1"
+            android:layout_margin="@dimen/img_marg"
+
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            tools:src='@mipmap/ic_launcher'
+            android:layout_weight="1"
+            android:layout_margin="@dimen/img_marg"
+
+            >
+        </ImageView>
+
+    </LinearLayout>
+
 </LinearLayout>
